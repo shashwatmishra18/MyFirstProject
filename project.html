@@ -1,0 +1,363 @@
+Rudra, [26-12-2024 01:36]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechReviews - Latest Gadget Reviews</title>
+    <link rel="stylesheet" href="C:\Users\satya\OneDrive\Desktop\New folder\Techproject\style.css" />
+  </head>
+  <style>
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #2563eb;
+  }
+  
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .products {
+    padding: 4rem 5%;
+  }
+  
+  .products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1e40af;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .iphone15 {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+  url(iphone\ 15.jpg);
+  }
+  
+  .s23 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+      url('https://images.unsplash.com/photo-1678911820864-e2c567c655d7');
+  }
+  
+  .pixel8 {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+      url('https://cdn.kalvo.com/uploads/img/gallery/56045-google-pixel-8-pro-2.jpg');
+  }
+  
+  .predator {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+      url('https://images.unsplash.com/photo-1593642632823-8f785ba67e45');
+  }
+  
+  .razer {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+      url('https://images.unsplash.com/photo-1544731612-de7f96afe55f');
+  }
+  
+  .rog {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+      url('https://images.unsplash.com/photo-1595327656903-2f54e37ce09b');
+  }
+  
+  .product-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+  }
+  
+  .rating {
+    color: #f59e0b;
+    margin-top: 0.5rem;
+  }
+  .review-section {
+    padding: 4rem 5%;
+    background-color: white;
+    margin: 2rem 0;
+  }
+  
+  .review-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1e40af;
+  }
+  
+  .review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+
+Rudra, [26-12-2024 01:36]
+background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #1e40af;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1e40af;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    nav ul {
+      gap: 1rem;
+    }
+    
+    .review-form {
+      padding: 1rem;
+    }
+  }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">TechReviews</div>
+        <ul>
+          <li><a href="#phones">Phones</a></li>
+          <li><a href="#laptops">Laptops</a></li>
+          <li><a href="#submit-review">Submit Review</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Latest Tech Reviews</h1>
+        <p>Discover in-depth reviews of the newest smartphones and laptops</p>
+      </section>
+
+      <section id="phones" class="products">
+        <h2>Smartphones</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image iphone15"></div>
+            <h3><a href="https://www.flipkart.com/apple-iphone-15-pro-max-blue-titanium-256-gb/p/itm4a0093df4a3d7?pid=MOBGTAGP4SVJGGH6&lid=LSTMOBGTAGP4SVJGGH6VFWA1T&marketplace=FLIPKART&q=iphone+15+pro+max&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=2c1db30b-1d06-4c2c-a1c8-e27dfe719b39.MOBGTAGP4SVJGGH6.SEARCH&ppt=hp&ppn=homepage&ssid=6w07rxzvwg0000001735146426316&qH=4bc0516d32b4b645" >15 Pro Max</a></h3>
+            <p>The latest flagship from Apple with A17 Pro chip</p>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-card">
+            <div class="product-image s23"></div>
+            <h3><a href ="https://www.flipkart.com/samsung-galaxy-s23-ultra-5g-cream-256-gb/p/itm322ed1a040dec?pid=MOBGMFFX44FGHNHV&lid=LSTMOBGMFFX44FGHNHVWUQWN4&marketplace=FLIPKART&q=samsung+s23&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=3a7673e9-7848-4b2c-b184-32905de282db.MOBGMFFX44FGHNHV.SEARCH&ppt=pp&ppn=pp&ssid=il8odktdeo0000001735154946290&qH=1e144c4dcdb9bb43" >Samsung S23 Ultra</a></h3>
+            <p>Ultimate Android experience with S-Pen</p>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-card">
+            <div class="product-image pixel8"></div>
+            <h3><a href = "https://www.flipkart.com/google-pixel-8-hazel-256-gb/p/itm67e2a2531aaac?pid=MOBGT5F2R7MCUSWG&lid=LSTMOBGT5F2R7MCUSWGNYZQSJ&marketplace=FLIPKART&q=google+pixel+8&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=d3204743-40d9-4c74-b7c6-0b965d5156b9.MOBGT5F2R7MCUSWG.SEARCH&ppt=pp&ppn=pp&ssid=qmfyib2fn40000001735155949428&qH=cb4644edceff5a2b"> Google Pixel 8 Pro</a></h3>
+            <p>AI-powered photography champion</p>
+            <div class="rating">★★★★½</div>
+          </div>
+        </div>
+      </section>
+
+Rudra, [26-12-2024 01:36]
+<section id="laptops" class="products">
+        <h2>Gaming Laptops</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image predator"></div>
+            <h3><a href ="https://www.flipkart.com/acer-predator-helios-300-intel-core-i7-11th-gen-11800h-16-gb-1-tb-ssd-windows-11-home-6-gb-graphics-nvidia-geforce-rtx-3060-165-hz-ph315-54-78cp-ph315-54-gaming-laptop/p/itm78618ac078f66?pid=COMG5KXYKZBETMAE&lid=LSTCOMG5KXYKZBETMAESM7KIO&marketplace=FLIPKART&q=Acer+Predator+Helios&store=search.flipkart.com&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=45899a42-6261-4467-ada7-56799200ba9a.COMG5KXYKZBETMAE.SEARCH&ppt=pp&ppn=pp&ssid=5awr0neysw0000001735156302677&qH=84fdb61968934e16">Acer Predator Helios</a></h3>
+            <p>Ultimate gaming performance</p>
+            <div class="rating">★★★★½</div>
+          </div>
+          <div class="product-card">
+            <div class="product-image razer"></div>
+            <h3><a href = "https://www.flipkart.com/samsung-galaxy-book4-pro-evo-ai-pc-intel-core-ultra-5-125h-16-gb-512-gb-ssd-windows-11-home-np940xgk-kg1in-np940xgk-lg1in-thin-light-laptop/p/itm4745134c8b98c?pid=COMGY2H4MZUZ87SW&lid=LSTCOMGY2H4MZUZ87SWOVLULO&marketplace=FLIPKART&q=razer+blade+16+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_17_na_pm_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_17_na_pm_ps&fm=Search&iid=en_Ge7kM_BqiQ--OZeCwh_BkpE362UkFc3ejrMbyIw8Y9mo9D5-VzhY7FeXL7CtNPQHYqgWLifCJdsLswKAhjSz6_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=yg1fpcqweo0000001735156395136&qH=77abbf2218324b50">Razer Blade 18</a></h3>
+            <p>Premium gaming experience</p>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="product-card">
+            <div class="product-image rog"></div>
+            <h3><a href = "https://www.flipkart.com/asus-tuf-gaming-a15-amd-ryzen-7-octa-core-7435hs-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-fa566ncr-hn075w-laptop/p/itmf85ee66cab735?pid=COMHFT2NY5V7RCMK&lid=LSTCOMHFT2NY5V7RCMKJW0ZPL&marketplace=FLIPKART&q=ASUS+ROG+Zephyrus&store=6bo%2Fb5g&srno=s_1_6&otracker=search&otracker1=search&fm=Search&iid=925f1b5d-d01b-40a5-bacd-9bfc1377edd2.COMHFT2NY5V7RCMK.SEARCH&ppt=sp&ppn=sp&ssid=g2qvt3160g0000001735156610637&qH=d25485962340cc90">ASUS ROG Zephyrus</a></h3>
+            <p>Portable gaming powerhouse</p>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="submit-review" class="review-section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form">
+          <div class="form-group">
+            <label for="device-type">Device Type</label>
+            <select id="device-type" required>
+              <option value="">Select device type</option>
+              <option value="phone">Smartphone</option>
+              <option value="laptop">Laptop</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="device-name">Device Name</label>
+            <input type="text" id="device-name" placeholder="Enter device name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="rating">Rating</label>
+            <select id="rating" required>
+              <option value="5">★★★★★ (5 stars)</option>
+              <option value="4">★★★★ (4 stars)</option>
+              <option value="3">★★★ (3 stars)</option>
+              <option value="2">★★ (2 stars)</option>
+              <option value="1">★ (1 star)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="review">Your Review</label>
+            <textarea id="review" rows="5" placeholder="Write your review here..." required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 TechReviews. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
